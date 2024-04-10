@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back3.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.filter-buttons {
+    margin-bottom: 6px;
+    margin-top: 38px;
+    margin-left: 135px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.store-heading {
+    color: black;
+    margin-left: 700px;
+}
+
+.clothing-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 114px;
+}
+
+.clothing-card {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+.clothing-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.clothing-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.badge {
+    background-color: red;
+  color: #fff;
+  padding: 7px 18px;
+  border-radius: 5px;
+  font-size: 13px;
+
+}
+#searchInput {
+    padding: 10px;
+    width: 271px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 11px;
+    margin-left: 123px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff; /* Change to desired focus color */
+}
+
+/* Styles for the filter buttons */
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Change to desired button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-buttons button:hover {
+    background-color: #0056b3; /* Change to desired hover color */
+}
+
+.filter-buttons button,
+#viewCartBtn {
+    margin-right: 10px;
+    padding: 8px 16px; /* Added padding to match button size */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Changed background color */
+    color: #fff; /* Changed text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.filter-buttons button:hover,
+#viewCartBtn:hover {
+    background-color: violet; /* Darker background color on hover */
+}
+
+#viewCartBtn {
+    position: absolute;
+  top: 101px;
+  right: 168px;
+  width: 139px;
+  padding: 17px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-buttons button,
+    #viewCartBtn {
+        margin: 5px;
+    }
+}
+.filter-buttons button,
+.add-to-cart-btn {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.add-to-cart-btn:hover {
+    background-color: green;
+}
+
+.add-to-cart-btn {
+    margin-left: auto; /* Push "Add to Cart" button to the right */
+}
+
+@media (max-width: 600px) {
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-buttons button,
+    .add-to-cart-btn {
+        margin: 5px;
+    }
+}
